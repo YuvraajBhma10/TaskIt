@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskIt - Your Personal Task Manager</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xxxxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="theme-switch-wrapper">
+            <em>Dark Mode</em>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </nav>
+    
+
+    <div class="container">
+        <h1 class="app-title">TaskIt</h1>
+        <div class="checklist-container">
+            <img src="/TaskIt.png" alt="Checklist" class="checklist-image">
+        </div>
+        <p class="app-description">TaskIt is your personal task manager. Stay organized and productive by managing your tasks effortlessly.</p>
+        <ul class="todo-list js-todo-list"></ul>
+        <div class="empty-state">
+            <h2 class="empty-state__title">Welcome to TaskIt</h2>
+            <p class="empty-state__description">Start by typing your task below and press enter to add it to your list.</p>
+        </div>
+        <form class="formselect">
+            <input autofocus type="text" class="inputselect" placeholder="E.g., Workout">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
